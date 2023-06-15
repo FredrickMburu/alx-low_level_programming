@@ -1,7 +1,7 @@
 #include<stdio.h>
 /**
- * main: prints string.
- * return: 0 exits the program.
+ * Description: main -  prints string.
+ * Return: 0 exits the program.
  */
 int main(void)
 {
