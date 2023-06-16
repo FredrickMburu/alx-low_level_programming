@@ -12,8 +12,8 @@ int j;
 for (j = '0'; j <= '9'; j++)
 {
 putchar(j);
-putchar(',');
 if (j < '9')
+putchar(',');
 putchar(' ');
 }
 putchar('\n');
