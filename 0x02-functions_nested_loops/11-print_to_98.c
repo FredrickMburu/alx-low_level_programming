@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * Description: print_to_98 - print from n to 98.
  * @n: passes the value  to the print_to_98 function
@@ -8,11 +9,37 @@
 
 void print_to_98(int n)
 {
-int i;
-for (i = n; i <= 98; i++)
+if (n <= 98)
 {
-_putchar(n);
-_putchar(44);
-_putchar(32);
+for (; n <= 98; n++)
+{
+if (n == 98)
+{
+printf("%d", n);
+printf("\n");
+break;
+}
+else
+{
+printf("%d, ", n);
 }
 }
+}
+else
+{
+for (; n >= 98; n--)
+{
+if (n == 98)
+{
+printf("%d", n);
+printf("\n");
+break;
+}
+else
+{
+printf("%d, ", n);
+}
+}
+}
+}
+
