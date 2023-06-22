@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * Description: main - entry point.
  * Return: (0) terminates the program after execution.
