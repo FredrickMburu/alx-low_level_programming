@@ -3,31 +3,26 @@
 /**
  * _atoi - function that prints number from string.
  * @s: pointer to character s.
- * Return: (n * sign)  returns the value as a digit,
+ * Return: (result * sign)  returns the value as a digit,
  */
 
 int _atoi(char *s)
 {
 	int sign = 1;
-	int n = 0;
+	int result = 0;
+	int i = 0;
 
-	while (*s == ' ')
-		s++;
-
-	if (*s == '-')
+	while (s[i] != '\0')
 	{
-		sign = -1;
-		s++;
-	}
-	else if (*s == '+')
-		s++;
-
-	while (*s >= '0' && *s <= '9')
-	{
-		n = n * 10 + (*s - '0');
-		s++;
+		if (s[i] == '-')
+			sign *= -1;
+		else if (s[i] >= '0' && s[i] <= '9')
+			result = result * 10 + (s[i] - '0');
+		else if (result != 0)
+			break;
+		i++;
 	}
 
-	return (n * sign);
+	return (result * sign);
 }
 
