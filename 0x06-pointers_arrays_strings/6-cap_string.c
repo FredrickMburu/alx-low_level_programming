@@ -9,27 +9,23 @@
 char *cap_string(char *z)
 {
 
-	int str_count;
+	int i;
 
-	str_count = 0;
-	while (z[str_count] != '\0')
+	i = 0;
+	while (z[i] != '\0')
 	{
 		if (z[0] >= 97 && z[0] <= 122)
 			z[0] = z[0] - 32;
-
-		if ((z[str_count] == ' ') || (z[str_count] == '\t') || (z[str_count] == '\n')
-				|| z[str_count] == ','
-				(z[str_count] == ';') || (z[str_count] == '.') || (z[str_count] == '!')
-				|| z[str_count] == '?'
-				(z[str_count] == '"') || (z[str_count] == '(') || (z[str_count] == ')')
-				|| (z[str_count] == '{')
-				|| (z[str_count] == '}'))
+		if (z[i] == ' ' || z[i] == '\t' || z[i] == '\n' ||
+				z[i] == ',' || z[i] == ';' || z[i] == '.' ||
+				z[i] == '!' || z[i] == '?' || z[i] == '"' ||
+				z[i] == '(' || z[i] == ')' || z[i] == '{' || z[i] == '}')
 		{
-			if (z[str_count + 1] >= 97 && z[str_count + 1] <= 122)
-				z[str_count + 1] = z[str_count + 1] - 32;
+			if (z[i + 1] >= 97 && z[i + 1] <= 122)
+				z[i + 1] = z[i + 1] - 32;
 
 		}
-		str_count++;
+		i++;
 	}
 	return (z);
 }
