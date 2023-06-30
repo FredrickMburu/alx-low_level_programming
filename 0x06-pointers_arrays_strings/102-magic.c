@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+/* main - entry to the program, Return: (0) terminates program */
 int main(void)
 {
 	int n;
