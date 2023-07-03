@@ -20,6 +20,7 @@ char *_strchr(char *s, char c)
 	{
 		if (s[j] == c)
 			return (s + j);
+		j++;
 	}
 
 	return ('\0');
