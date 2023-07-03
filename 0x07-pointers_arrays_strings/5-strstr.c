@@ -6,8 +6,8 @@
  * being searched for.
  * @needle: substring that is being searched for.
  *
- * Return:  a pointer to the byte in s that matches one
- *  of the bytes in accept, or NULL if no such byte is found.
+ * Return: a pointer to the beginning of the located substring
+ * , or NULL if the substring is not found.
  */
 
 
