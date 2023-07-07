@@ -2,18 +2,10 @@
 
 /**
  * _puts - function to print a string.
- * @str: passes the value of str
+ * @s: passes the value of s
  */
 
-void _puts(char *str)
+void _puts(char *s)
 {
-	int i = 0;
 
-	while (str[i])
-	{
-		_putchar(str[i]);
-		i++;
-	}
-
-	_putchar('\n');
 }
